@@ -2,9 +2,9 @@ import streamlit as st
 
 # Menu options
 menu_options = ["Home", "Attendance", "SGPA", "Contact"]
-
+st.title("Hi There!")
 # Display the menu
-s = st.selectbox("Hi There", menu_options)
+s = st.selectbox("Select an Option!", menu_options)
 
 # Handle menu selections
 if s == "Home":
@@ -50,9 +50,11 @@ elif s == "SGPA":
         st.success(f"You need to score a minimum of {s} SGPA in your next semester")
 
 elif s == "Contact":
-    st.write("Mobile: +91 9701343474")
-    st.write("Mail: adityathirumala20@gmail.com")
-    st.markdown("""<a href='https://www.linkedin.com/in/thirumala-rohanaditya-6b8228264'>LinkedIn Profile</a>""", unsafe_allow_html=True)
+	st.markdown("""<a href='https://github.com/aytid'>Github</a>""", unsafe_allow_html=True)
+	st.write("adityathirumala20@gmail.com")
+	st.markdown("""<a href='https://www.linkedin.com/in/thirumala-rohanaditya-6b8228264'>LinkedIn Profile</a>""", unsafe_allow_html=True)
+
 
 st.write('\n\n')
 st.write("~Rohan Aditya Thirumala")
+
