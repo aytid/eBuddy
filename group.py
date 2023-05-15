@@ -4,7 +4,7 @@ import streamlit as st
 menu_options = ["Home", "Attendance", "SGPA", "Contact"]
 
 # Display the menu
-s = st.selectbox("Main Menu", menu_options)
+s = st.selectbox("Hi There", menu_options)
 
 # Handle menu selections
 if s == "Home":
