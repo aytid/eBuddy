@@ -1,6 +1,4 @@
 import streamlit as st
-import numpy as np
-import matplotlib.pyplot as plt
 
 # Menu options
 menu_options = ["Home", "Attendance", "SGPA", "Contact"]
@@ -50,32 +48,6 @@ elif s == "SGPA":
 		st.error("You cannot reach your expected CGPA!!")
 	else:
 		st.success(f"You need to score a minimum of {s} SGPA in your next semester")
-	st.title("GPA graphs")
-	n=st.number_input("Enter number of semesters held",min_value=1, format="%i")
-	l1=[]
-	for i in range(n):
-		input_value = st.number_input(f'Enter Semester {i+1} SGPA', key=f'input_{i+1}')
-		l1.append(input_value)
-
-	l2=[]
-	avg=0
-	for i in range(n):
-		for j in range(i+1):
-			avg+=l1[j]
-		avg=avg/(j+1)
-		l2.append(avg)
-		avg=0
-		
-	semesters = [i+1 for i in range(len(l1))]
-	plt.plot(semesters, l1,label='SGPA',marker='o',color='r')
-	plt.plot(semesters, l2,label='CGPA',marker='o',color='k')
-	plt.xlabel('Semester')
-	plt.ylabel('GPA')
-	plt.xticks(np.arange(1,n+1,1))
-	plt.title('Semester SGPAs and CGPAs')
-	plt.legend()
-	st.pyplot(plt)
-
 elif s == "Contact":
 	st.markdown("""<a href='https://github.com/aytid'>Github</a>""", unsafe_allow_html=True)
 	st.write("adityathirumala20@gmail.com")
@@ -84,4 +56,3 @@ elif s == "Contact":
 
 st.write('\n\n')
 st.write("~Rohan Aditya Thirumala")
-
