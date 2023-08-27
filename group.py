@@ -3,14 +3,13 @@ import streamlit as st
 # Menu options
 menu_options = ["Home", "Attendance", "SGPA", "Contact"]
 st.title("eBuddy Webapp!")
-st.title("Your Attendance and CGPA Companion")
 # Display the menu
 s = st.selectbox("Select an Option", menu_options)
 
 # Handle menu selections
 if s == "Home":
     c1, c2, c3 = st.columns([1, 1, 1])
-    c1.title("This WebApp is here for YOU!")
+    c1.title("Your Attendance and CGPA Companion")
     c2.title("You can know attendance before and after bunking class")
     c3.title("You can estimate SGPA for an expected CGPA")
 
