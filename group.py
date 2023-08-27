@@ -2,7 +2,8 @@ import streamlit as st
 
 # Menu options
 menu_options = ["Home", "Attendance", "SGPA", "Contact"]
-st.title("Online buddy")
+st.title("Online buddy!")
+st.subheader("Your Attendance and CGPA Companion")
 # Display the menu
 s = st.selectbox("Select an Option", menu_options)
 
