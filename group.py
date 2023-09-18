@@ -51,7 +51,7 @@ elif s == "SGPA":
 elif s == "Contact":
 	st.markdown("""<a href='https://github.com/aytid'>Github</a>""", unsafe_allow_html=True)
 	st.write("adityathirumala20@gmail.com")
-	st.markdown("""<a href='https://www.linkedin.com/in/thirumala-rohanaditya-6b8228264'>LinkedIn Profile</a>""", unsafe_allow_html=True)
+	st.markdown("""<a href='https://www.linkedin.com/in/rohan-aditya-thirumala-6b8228264/'>LinkedIn Profile</a>""", unsafe_allow_html=True)
 
 
 st.write('\n\n')
