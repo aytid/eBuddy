@@ -20,9 +20,6 @@ if selected_option == "Home":
     with col2:
         st.image("score.png", caption="Estimate SGPA", use_column_width=True)
         st.markdown("### Calculate the SGPA needed for your desired CGPA!")
-    with col3:
-        st.image("https://via.placeholder.com/150", caption="Stay on Track", use_column_width=True)
-        st.markdown("### Keep your academic progress in check!")
 
 # Attendance Page
 elif selected_option == "Attendance":
