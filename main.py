@@ -92,7 +92,7 @@ elif selected_option == "Contact":
         - **[Instagram](https://www.instagram.com/)** - Follow my personal journey.
         - **Email** - Reach me at: adityathirumala20@gmail.com
     """, unsafe_allow_html=True)
-    st.image("https://via.placeholder.com/300x100", caption="Feel free to connect!", use_column_width=True)
+    st.image("connect.png", caption="Feel free to connect!", use_column_width=True)
 
 # Footer
 st.write("---")
