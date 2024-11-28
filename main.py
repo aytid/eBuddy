@@ -19,7 +19,7 @@ if selected_option == "Home":
         st.markdown(
             """
             <div style="display: flex; flex-direction: column; align-items: center; padding: 10px;">
-                <img src="https://github.com/aytid/eBuddy/blob/main/attendance.png" alt="Track Attendance" style="width: 150px; height: 100px; border-radius: 10px;">
+                <img src="https://search.brave.com/images?q=Apple+Inc.&context=W3sic3JjIjoiaHR0cHM6Ly91cGxvYWQud2lraW1lZGlhLm9yZy93aWtpcGVkaWEvY29tbW9ucy90aHVtYi9mL2ZhL0FwcGxlX2xvZ29fYmxhY2suc3ZnLzIyMHB4LUFwcGxlX2xvZ29fYmxhY2suc3ZnLnBuZyIsInRleHQiOiJBcHBsZSBsb2dvIGJsYWNrIiwicGFnZV91cmwiOiJodHRwczovL2VuLndpa2lwZWRpYS5vcmcvd2lraS9BcHBsZV9JbmMuIn1d&sig=d7e230a37cfa9332b568bedfc391ed2e7871bb8dd44e611acb1c98abf4d81501&nonce=e1ff5dfa2c31c8bacdbe8c6e6f820e39&source=infoboxImg" alt="Track Attendance" style="width: 150px; height: 100px; border-radius: 10px;">
                 <p style="font-size: 16px; font-weight: bold; text-align: center; margin-top: 10px;">
                 Know your attendance status before and after bunking!
                 </p>
