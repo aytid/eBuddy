@@ -46,9 +46,9 @@ elif selected_option == "Attendance":
             st.info(f"After bunking {bunk_classes} classes, your attendance would be **{new_attendance}%**.")
 
             # Target Attendance Calculator after Bunking
-            st.subheader("🎯 Target Attendance Calculator (After Bunking)")
+            st.subheader("🎯 Target Attendance Calculator")
             target_attendance_bunk = st.number_input(
-                "Enter Desired Target Attendance After Bunking (%)",
+                "Enter Desired Target Attendance",
                 min_value=1,
                 max_value=100,
                 value=75,
