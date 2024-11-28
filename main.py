@@ -3,10 +3,9 @@ import streamlit as st
 # Set Page Config
 st.set_page_config(page_title="eBuddy Web App", layout="wide")
 
-# App Title in Sidebar
-st.sidebar.title("eBuddy Navigation")
+# Top Navigation Dropdown
 menu_options = ["Home", "Attendance", "SGPA Estimator", "Contact"]
-selected_option = st.sidebar.radio("Select a Page", menu_options)
+selected_option = st.selectbox("Navigate to:", menu_options, key="top_navigation")
 
 # Home Page
 if selected_option == "Home":
