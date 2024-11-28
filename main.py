@@ -1,5 +1,4 @@
 import streamlit as st
-from streamlit_option_menu import option_menu  # Install using: pip install streamlit-option-menu
 
 # Set Page Config
 st.set_page_config(page_title="eBuddy Web App", layout="wide")
@@ -7,12 +6,10 @@ st.set_page_config(page_title="eBuddy Web App", layout="wide")
 # App Title in Sidebar
 menu_options = ["Home", "Attendance", "SGPA Estimator", "Contact"]
 
-# Custom Dropdown Menu for Navigation
-selected_option = option_menu(
-    menu_title="eBuddy Navigation",
-    options=menu_options,
-    default_index=0,
-    orientation="horizontal",  # You can change this to "vertical" if you prefer a vertical menu
+# Simple Dropdown Menu for Navigation
+selected_option = st.selectbox(
+    "Navigation",
+    options=menu_options
 )
 
 # Home Page
