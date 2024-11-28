@@ -14,32 +14,12 @@ if selected_option == "Home":
     st.subheader("Simplify Your Academic Life!")
     
     col1, col2 = st.columns(2)
-
     with col1:
-        st.markdown(
-            """
-            <div style="display: flex; flex-direction: column; align-items: center; padding: 10px;">
-                <img src="https://search.brave.com/images?q=Apple+Inc.&context=W3sic3JjIjoiaHR0cHM6Ly91cGxvYWQud2lraW1lZGlhLm9yZy93aWtpcGVkaWEvY29tbW9ucy90aHVtYi9mL2ZhL0FwcGxlX2xvZ29fYmxhY2suc3ZnLzIyMHB4LUFwcGxlX2xvZ29fYmxhY2suc3ZnLnBuZyIsInRleHQiOiJBcHBsZSBsb2dvIGJsYWNrIiwicGFnZV91cmwiOiJodHRwczovL2VuLndpa2lwZWRpYS5vcmcvd2lraS9BcHBsZV9JbmMuIn1d&sig=d7e230a37cfa9332b568bedfc391ed2e7871bb8dd44e611acb1c98abf4d81501&nonce=e1ff5dfa2c31c8bacdbe8c6e6f820e39&source=infoboxImg" alt="Track Attendance" style="width: 150px; height: 100px; border-radius: 10px;">
-                <p style="font-size: 16px; font-weight: bold; text-align: center; margin-top: 10px;">
-                Know your attendance status before and after bunking!
-                </p>
-            </div>
-            """,
-            unsafe_allow_html=True,
-        )
-
+        st.image("attendance.png", caption="Track Attendance", use_column_width=False, width=250)
+        st.markdown("### Know your attendance status before and after bunking!")
     with col2:
-        st.markdown(
-            """
-            <div style="display: flex; flex-direction: column; align-items: center; padding: 10px;">
-                <img src="score.png" alt="Estimate SGPA" style="width: 150px; height: 100px; border-radius: 10px;">
-                <p style="font-size: 16px; font-weight: bold; text-align: center; margin-top: 10px;">
-                Calculate the SGPA needed for your desired CGPA!
-                </p>
-            </div>
-            """,
-            unsafe_allow_html=True,
-        )
+        st.image("score.png", caption="Estimate SGPA", use_column_width=False, width=250)
+        st.markdown("### Calculate the SGPA needed for your desired CGPA!")
 
 # Attendance Page
 elif selected_option == "Attendance":
@@ -68,7 +48,7 @@ elif selected_option == "Attendance":
             # Target Attendance Calculator after Bunking
             st.subheader("🎯 Target Attendance Calculator")
             target_attendance_bunk = st.number_input(
-                "Enter Desired Target Attendance",
+                "Enter Desired Target Attendance(%)",
                 min_value=1,
                 max_value=100,
                 value=75,
