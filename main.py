@@ -8,7 +8,7 @@ menu_options = ["Home", "Attendance", "SGPA Estimator", "Contact"]
 
 # Simple Dropdown Menu for Navigation
 selected_option = st.selectbox(
-    "Navigation to",
+    "Navigate to",
     options=menu_options
 )
 
