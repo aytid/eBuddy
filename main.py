@@ -18,7 +18,7 @@ if selected_option == "Home":
         st.image("attendance.png", caption="Track Attendance", use_column_width=True)
         st.markdown("### Know your attendance status before and after bunking!")
     with col2:
-        st.image("https://via.placeholder.com/150", caption="Estimate SGPA", use_column_width=True)
+        st.image("score.png", caption="Estimate SGPA", use_column_width=True)
         st.markdown("### Calculate the SGPA needed for your desired CGPA!")
     with col3:
         st.image("https://via.placeholder.com/150", caption="Stay on Track", use_column_width=True)
