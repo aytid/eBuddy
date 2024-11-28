@@ -15,10 +15,10 @@ if selected_option == "Home":
     
     col1, col2 = st.columns(2)
     with col1:
-        st.image("attendance.png", caption="Track Attendance", use_column_width=True)
+        st.image("attendance.png", caption="Track Attendance", use_column_width=False, width=250)
         st.markdown("### Know your attendance status before and after bunking!")
     with col2:
-        st.image("score.png", caption="Estimate SGPA", use_column_width=True)
+        st.image("score.png", caption="Estimate SGPA", use_column_width=False, width=250)
         st.markdown("### Calculate the SGPA needed for your desired CGPA!")
 
 # Attendance Page
@@ -45,16 +45,21 @@ elif selected_option == "Attendance":
             new_attendance = round((classes_present / new_total) * 100, 2)
             st.info(f"After bunking {bunk_classes} classes, your attendance would be **{new_attendance}%**.")
 
-        # Target Attendance Calculator
-        st.subheader("🎯 Target Attendance Calculator")
-        target_attendance = st.number_input("Enter Your Target Attendance (%)", min_value=1, max_value=100, value=75)
-        if target_attendance > current_attendance:
-            x = 0
-            while round(((classes_present + x) / (total_classes + x) * 100), 2) < target_attendance:
-                x += 1
-            st.success(f"✅ To achieve {target_attendance}%, you need to attend **{x} more classes**.")
-        elif target_attendance <= current_attendance:
-            st.success("Your current attendance already meets or exceeds your target!")
+            # Target Attendance Calculator after Bunking
+            st.subheader("🎯 Target Attendance Calculator (After Bunking)")
+            target_attendance_bunk = st.number_input(
+                "Enter Desired Target Attendance After Bunking (%)",
+                min_value=1,
+                max_value=100,
+                value=75,
+            )
+            if target_attendance_bunk > new_attendance:
+                x = 0
+                while round(((classes_present + x) / (new_total + x) * 100), 2) < target_attendance_bunk:
+                    x += 1
+                st.success(f"✅ To achieve {target_attendance_bunk}%, you need to attend **{x} more classes**.")
+            elif target_attendance_bunk <= new_attendance:
+                st.success("Your projected attendance already meets or exceeds your target!")
 
 # SGPA Estimator Page
 elif selected_option == "SGPA Estimator":
