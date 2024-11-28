@@ -5,7 +5,7 @@ st.set_page_config(page_title="eBuddy Web App", layout="wide")
 
 # Top Navigation Dropdown
 menu_options = ["Home", "Attendance", "SGPA Estimator", "Contact"]
-selected_option = st.selectbox("", menu_options, key="top_navigation")
+selected_option = st.selectbox("Navigate to", menu_options, key="top_navigation")
 
 # Home Page
 if selected_option == "Home":
