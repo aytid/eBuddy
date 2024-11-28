@@ -10,7 +10,7 @@ selected_option = st.sidebar.radio("Select a Page", menu_options)
 
 # Home Page
 if selected_option == "Home":
-    st.title("Welcome to eBuddy - Your Attendance and CGPA Companion")
+    st.title("eBuddy")
     st.subheader("Simplify Your Academic Life!")
     
     col1, col2, col3 = st.columns(3)
