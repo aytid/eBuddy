@@ -19,7 +19,7 @@ if selected_option == "Home":
         st.markdown(
             """
             <div style="display: flex; flex-direction: column; align-items: center; padding: 10px;">
-                <img src="attendance.png" alt="Track Attendance" style="width: 150px; height: 100px; border-radius: 10px;">
+                <img src="https://github.com/aytid/eBuddy/blob/main/attendance.png" alt="Track Attendance" style="width: 150px; height: 100px; border-radius: 10px;">
                 <p style="font-size: 16px; font-weight: bold; text-align: center; margin-top: 10px;">
                 Know your attendance status before and after bunking!
                 </p>
