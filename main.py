@@ -15,7 +15,7 @@ if selected_option == "Home":
     
     col1, col2, col3 = st.columns(3)
     with col1:
-        st.image("https://via.placeholder.com/150", caption="Track Attendance", use_column_width=True)
+        st.image("attendance.png", caption="Track Attendance", use_column_width=True)
         st.markdown("### Know your attendance status before and after bunking!")
     with col2:
         st.image("https://via.placeholder.com/150", caption="Estimate SGPA", use_column_width=True)
