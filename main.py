@@ -13,13 +13,30 @@ if selected_option == "Home":
     st.title("eBuddy")
     st.subheader("Simplify Your Academic Life!")
     
-    col1, col2 = st.columns(2)
-    with col1:
-        st.image("attendance.png", caption="Track Attendance", use_column_width=False, width=50)
-        st.markdown("### Know your attendance status before and after bunking!")
-    with col2:
-        st.image("score.png", caption="Estimate SGPA", use_column_width=False, width=50)
-        st.markdown("### Calculate the SGPA needed for your desired CGPA!")
+col1, col2 = st.columns(2)
+
+with col1:
+    st.markdown(
+        """
+        <div style="display: flex; flex-direction: column; align-items: center;">
+            <img src="attendance.png" alt="Track Attendance" style="width: 100px; height: 75px;">
+            <p style="font-size: 16px; font-weight: bold;">Know your attendance status before and after bunking!</p>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+with col2:
+    st.markdown(
+        """
+        <div style="display: flex; flex-direction: column; align-items: center;">
+            <img src="score.png" alt="Estimate SGPA" style="width: 100px; height: 75px;">
+            <p style="font-size: 16px; font-weight: bold;">Calculate the SGPA needed for your desired CGPA!</p>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
 
 # Attendance Page
 elif selected_option == "Attendance":
