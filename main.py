@@ -19,10 +19,10 @@ if selected_option == "Home":
 
     col1, col2 = st.columns(2)
     with col1:
-        st.image("attendance.png", caption="Track Attendance", use_column_width=False, width=250)
+        #st.image("attendance.png", caption="Track Attendance", use_column_width=False, width=250)
         st.markdown("### Know your attendance status before and after bunking!")
     with col2:
-        st.image("score.png", caption="Estimate SGPA", use_column_width=False, width=250)
+        #st.image("score.png", caption="Estimate SGPA", use_column_width=False, width=250)
         st.markdown("### Calculate the SGPA needed for your desired CGPA!")
 
 # Attendance Page
