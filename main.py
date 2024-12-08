@@ -16,14 +16,18 @@ selected_option = st.selectbox(
 if selected_option == "Home":
     st.title("eBuddy")
     st.subheader("Simplify Your Academic Life!")
+    st.subhheader("Know your attendance status before and after bunking")
+    st.subheader("Calculate the SGPA needed for your desired CGPA")
 
-    col1, col2 = st.columns(2)
+    '''col1, col2 = st.columns(2)
     with col1:
         #st.image("attendance.png", caption="Track Attendance", use_column_width=False, width=250)
         st.markdown("### Know your attendance status before and after bunking!")
     with col2:
         #st.image("score.png", caption="Estimate SGPA", use_column_width=False, width=250)
         st.markdown("### Calculate the SGPA needed for your desired CGPA!")
+        '''
+        
 
 # Attendance Page
 elif selected_option == "Attendance":
