@@ -5,7 +5,7 @@ st.set_page_config(page_title="eBuddy Web App", layout="wide")
 
 # App Title in Sidebar
 menu_options = ["Home", "Attendance", "SGPA Estimator", "Contact"]
-
+st.title("eBuddy")
 # Simple Dropdown Menu for Navigation
 selected_option = st.selectbox(
     "Navigate to",
@@ -14,7 +14,7 @@ selected_option = st.selectbox(
 
 # Home Page
 if selected_option == "Home":
-    st.title("eBuddy")
+    #st.title("eBuddy")
     st.subheader("Simplify Your Academic Life")
     st.subheader("Know your attendance status before and after bunking")
     st.subheader("Calculate the SGPA needed for your desired CGPA")
