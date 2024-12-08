@@ -15,7 +15,7 @@ selected_option = st.selectbox(
 # Home Page
 if selected_option == "Home":
     st.title("eBuddy")
-    st.subheader("Simplify Your Academic Life!")
+    st.subheader("Simplify Your Academic Life")
     st.subheader("Know your attendance status before and after bunking")
     st.subheader("Calculate the SGPA needed for your desired CGPA")
         
