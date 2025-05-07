@@ -81,13 +81,10 @@ elif selected_option == "SGPA Estimator":
 # Work from Home % Page
 elif selected_option == "Work from Home%":
     st.title("Work from Home Calculator")
-    st.subheader("Ensure 60% In-Office Work")
-
-    month = st.selectbox("Select Month", ["January", "February", "March", "April", "May", "June", 
-                                          "July", "August", "September", "October", "November", "December"])
+    st.subheader("Ensure 60% Work from Office")
+    
     total_working_days = st.number_input("Total Working Days in Month", min_value=1, value=22)
     leaves_taken = st.number_input("Number of Leaves Taken", min_value=0, value=0)
-    holidays = st.number_input("Number of Holidays", min_value=0, value=0)
     wfh_done = st.number_input("Number of WFH Days Already Taken", min_value=0, value=0)
 
     actual_days = total_working_days - leaves_taken - holidays
