@@ -15,7 +15,7 @@ selected_option = st.selectbox(
 
 # Home Page
 if selected_option == "Home":
-    st.subheader("Simplify Your Academic Life and Work from Home")
+    st.subheader("Simplify Your Academic and Office Life")
 
 # Attendance Page
 elif selected_option == "College Attendance":
