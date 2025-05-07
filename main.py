@@ -79,7 +79,7 @@ elif selected_option == "SGPA Estimator":
         st.info("Enter valid inputs to estimate your required SGPA.")
 
 # Work from Home % Page
-elif selected_option == "Work from Home%":
+elif selected_option == "Work from Home":
     st.title("Work from Home Calculator")
     st.subheader("Ensure 60% Work from Office")
     
