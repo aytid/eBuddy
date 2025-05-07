@@ -103,9 +103,9 @@ elif selected_option == "Work from Home%":
 
 # Always Visible Contact Section
 st.write("---")
-st.title("Connect with Me!")
+#st.title("Connect with Me!")
 st.markdown("""
-    ### Stay in Touch:
+    ### Connect with Me
     - **[LinkedIn](https://www.linkedin.com/in/rohan-aditya-thirumala-6b8228264/)** - Let's network and connect professionally!
     - **[GitHub](https://github.com/aytid)** - Explore my projects.
     - **[Instagram](https://www.instagram.com/)** - Follow my personal journey.
