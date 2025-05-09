@@ -78,25 +78,25 @@ elif selected_option == "SGPA Estimator":
     else:
         st.info("Enter valid inputs to estimate your required SGPA.")
 
-# Work from Home % Page
 elif selected_option == "Work from Home":
     st.title("Work from Home Calculator")
     st.subheader("Ensure 60% Work from Office")
-    
+
     total_working_days = st.number_input("Total Working Days in Month", min_value=1, value=22)
     leaves_taken = st.number_input("Number of Leaves Taken", min_value=0, value=0)
     wfh_done = st.number_input("Number of WFH Days Already Taken", min_value=0, value=0)
 
-    actual_days = total_working_days - leaves_taken;
+    max_not_in_office = int(0.4 * total_working_days)
+    used_not_in_office = leaves_taken + wfh_done
+    remaining_wfh = max(0, max_not_in_office - used_not_in_office)
 
-    if actual_days <= 0:
-        st.error("❌ No valid working days left after excluding leaves and holidays.")
+    if used_not_in_office > max_not_in_office:
+        st.error("❌ You've exceeded the 40% limit for non-office days (Leaves + WFH).")
     else:
-        max_wfh_allowed = int(0.4 * actual_days)
-        remaining_wfh = max(0, max_wfh_allowed - wfh_done)
-
         st.info(f"📌 You can take **{remaining_wfh}** more WFH days this month to maintain 60% in-office presence.")
-        st.caption(f"Note: Based on {actual_days} valid working days.")
+
+    st.caption(f"Note: Total non-office days allowed = {max_not_in_office} out of {total_working_days} working days.")
+
 
 # Always Visible Contact Section
 st.write("---")
