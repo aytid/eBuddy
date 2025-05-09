@@ -4,7 +4,7 @@ import streamlit as st
 st.set_page_config(page_title="eBuddy Web App", layout="wide")
 
 # App Title in Sidebar
-menu_options = ["Home", "College Attendance", "SGPA Estimator", "Work from Home%"]
+menu_options = ["Home", "College Attendance", "SGPA Estimator", "Work from Home"]
 st.title("eBuddy")
 
 # Simple Dropdown Menu for Navigation
