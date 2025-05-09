@@ -87,7 +87,7 @@ elif selected_option == "Work from Home":
     leaves_taken = st.number_input("Number of Leaves Taken", min_value=0, value=0)
     wfh_done = st.number_input("Number of WFH Days Already Taken", min_value=0, value=0)
 
-    actual_days = total_working_days - leaves_taken - holidays
+    actual_days = total_working_days - leaves_taken;
 
     if actual_days <= 0:
         st.error("❌ No valid working days left after excluding leaves and holidays.")
